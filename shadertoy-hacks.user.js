@@ -35,7 +35,6 @@
 	
     window.addEventListener("load", function() {
         window.addEventListener("keydown", function(event) {
-            console.log(event.key);
 			if (event.altKey && event.key in altHandlers)
 				altHandlers[event.key]();
 			else if (event.ctrlKey && event.key in ctrlHandlers)
