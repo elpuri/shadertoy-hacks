@@ -1,12 +1,16 @@
 # shadertoy-hacks
 A greasemonkey script for adding convenience hacks to shadertoy.com
 
+
 ## Features
 
 * Alt+down resets the global time also when you're in fullscreen mode. 
   This is useful for running multi-pass shaders which accumulate results 
   such as path tracers in fullscreen mode
 * Ctrl+D grabs a screenshot. Works both in normal and fullscreen mode.
+* Single click forking of shaders. Useful when you've made tweaks to someone
+  else's stuff and want to save a copy or when you want to a retain
+  intermediate versions of your own shaders during development.
 
 
 ## Installation
