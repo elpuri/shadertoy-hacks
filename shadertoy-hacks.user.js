@@ -24,7 +24,6 @@
             passes: [] };
 
         gShaderToy.mEffect.mPasses.forEach(function(pass) {
-            console.log(pass.mInputs);
             forkedShader.passes.push({
                 sourceCode: pass.mSource,
                 inputs: extractInputs(pass.mInputs),
@@ -156,7 +155,6 @@
 
         if (window.location.href.endsWith("#fork")) {
             var forkedShader = JSON.parse(window.sessionStorage.getItem("forkedShader"));
-            console.log(forkedShader);
             applyExtractedShader(forkedShader);	
         }
     });
