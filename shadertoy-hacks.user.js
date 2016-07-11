@@ -49,7 +49,7 @@
                     var info = inputs[i].mInfo;
                     r[i] = { type: info.mType,
                             sampler: info.mSampler,
-                            id: info.mId,
+                            id: info.mID,
                             source: info.mSrc};
                 } else {
                     r[i] = null;
@@ -73,7 +73,7 @@
                     var input = inputs[i];
                     gShaderToy.SetTexture(i, {
                         mType: input.type, 
-                        mId: input.id,
+                        mID: input.id,
                         mSrc: input.source,
                         mSampler: input.sampler}); 
                 }
