@@ -109,10 +109,8 @@
             applyInputs(pass.inputs);
         });
 
-        document.getElementById("shaderTitle").value = shader.title + " " + Date.now();
         document.getElementById("shaderTags").value = shader.tags;
-        document.getElementById("shaderDescription").value = shader.description;
-        doSaveShader();
+        document.getElementById("shaderDescription").value = "Forked from " + shader.title + " (" + document.referrer + ")\n\n" + shader.description;
     }
 
 
